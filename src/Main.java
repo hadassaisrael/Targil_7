@@ -97,7 +97,7 @@ public class Main {
                 "ch: chips\n" +
                 "or: onion rings\n" +
                 "sa: salad\n" +
-                "fe: friedEgg");
+                "fe: fried egg");
         // TODO: Add a Hamburger-Topping Factory and use it to create a decorated Hamburger
         String toppingChioce = scanner.nextLine();
         switch (toppingChioce){
