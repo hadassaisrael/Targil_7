@@ -2,13 +2,13 @@ public class StatisticVisitor implements FileDetailsVisitor{
 
     @Override
     public void visit(HtmlFileDetails html) {
-        System.out.println("TThe file "+ html.name + " contains " + html.getLines() + " lines.");
+        System.out.println("The file "+ html.name + " contains " + html.getLines() + " lines.");
     }
 
     @Override
     public void visit(Mp3FileDetails mp3) {
         int totalSec= Math.round(mp3.getSize()/ mp3.getLengthSec());
-        System.out.println("The bitrate of "+ mp3.name + " is " + totalSec + " bytess per second.");
+        System.out.println("The bitrate of "+ mp3.name + " is " + totalSec + " bytes per second.");
     }
 
     @Override
@@ -20,7 +20,7 @@ public class StatisticVisitor implements FileDetailsVisitor{
     @Override
     public void visit(PptxFileDetails pptx) {
         int AvgSlides= Math.round(pptx.getSize()/ pptx.getSlides());
-        System.out.println("The average slide size in Presentation "+ pptx.name + " is " + AvgSlides);
+        System.out.println("The average slide size in Presentation "+ pptx.name + " is " + AvgSlides+ ".");
     }
 
     @Override
